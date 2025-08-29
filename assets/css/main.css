@@ -3240,6 +3240,7 @@ input, select, textarea {
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
 			background-attachment: scroll,								scroll,														scroll;
+			filter: brightness(0.5); /* Lower = darker, adjust as needed */
 			z-index: -1;
 		}
 
