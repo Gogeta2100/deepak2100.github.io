@@ -130,9 +130,15 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+			  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+			  const today = new Date();
+			  document.getElementById('latest-date').textContent = today.toLocaleDateString('en-US', options);
+			</script>
 
 	</body>
 </html>
+
 
 
 
