@@ -10,6 +10,31 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+		  .featured-flex {
+		    display: flex;
+		    align-items: center;
+		    gap: 40px;
+		    margin-top: 2em;
+		  }
+		  .featured-flex-divider {
+		    width:2px;
+		    height:320px;
+		    background:#ccc;
+		    margin:0 20px;
+		  }
+		  @media (max-width: 800px) {
+		    .featured-flex {
+		      flex-direction: column;
+		      gap: 20px;
+		    }
+		    .featured-flex-divider {
+		      width: 80%;
+		      height: 2px;
+		      margin: 20px 0;
+		    }
+		  }
+		</style>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -51,30 +76,29 @@
 
 						<!-- Featured Post -->
 						<article class="post featured">
-							<header class="major" style="text-align: center;">
-								<span class="date" id="latest-date"></span>
-								<h2><a href="#">Why I love<br />Astrophysics</a></h2>
-							</header>
-							<div style="display: flex; align-items: center; gap: 40px; margin-top: 2em;">
-								<!-- Left: Quote Section -->
-								<div style="flex: 1;">
-									<p>
-										"I do not know what I may appear to the world, but to myself I seem to have been only<br /> 
-										like a boy playing on the sea-shore, and diverting myself in now and then finding a<br />
-										smoother pebble or a prettier shell than ordinary, whilst the great ocean of truth <br />
-										lay all undiscovered before me."
-									</p>
-									<p style="text-align: right; font-style: italic; margin-top: 5px;">
-										&mdash; Sir Isaac Newton
-									</p>
-								</div>
-								<!-- Center: Divider Line -->
-								<div style="width:2px; height:320px; background:#ccc; margin:0 20px;"></div>
-								<!-- Right: Image -->
-								<div style="flex: 1; display:flex; justify-content:center;">
-									<img src="images/For_website.jpg" alt="Your Photo" style="max-width:300px; height:auto; border-radius:12px;" />
-								</div>
-							</div>
+						  <header class="major" style="text-align: center;">
+						    <span class="date" id="latest-date"></span>
+						    <h2><a href="#">Why I love<br />Astrophysics</a></h2>
+						  </header>
+						  <div class="featured-flex">
+						    <!-- Left: Quote Section -->
+						    <div style="flex: 1;">
+						      <p>
+						        "I do not know what I may appear to the world, but to myself I seem to have been only like a boy playing on the sea-shore,<br />
+						        and diverting myself in now and then finding a smoother pebble or a prettier shell than ordinary, whilst the great ocean of<br />
+						        truth lay all undiscovered before me."
+						      </p>
+						      <p style="text-align: right; font-style: italic; margin-top: 5px;">
+						        &mdash; Sir Isaac Newton
+						      </p>
+						    </div>
+						    <!-- Center: Divider Line -->
+						    <div class="featured-flex-divider"></div>
+						    <!-- Right: Image -->
+						    <div style="flex: 1; display:flex; justify-content:center;">
+						      <img src="images/For_website.jpg" alt="Your Photo" style="max-width:300px; height:auto; border-radius:12px;" />
+						    </div>
+						  </div>
 						</article>
 
 					</div>
@@ -144,5 +168,6 @@
 
 	</body>
 </html>
+
 
 
